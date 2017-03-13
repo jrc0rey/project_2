@@ -7,6 +7,16 @@ var express = require('express'),
 	hbs = require('hbs')
 
 
+app.use(bodyParser.urlencoded({extended: true}));
+
+require('./db/db'); 
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 
 
