@@ -15,3 +15,10 @@ form {
   font-size: 20px;
   font-weight: bold;
 }
+.board {
+  background-color: red;
+}
+.city li {
+  text-decoration: none;
+  list-style-type: none;
+}

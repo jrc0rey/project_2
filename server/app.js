@@ -10,7 +10,8 @@ var express = require('express'),
 
 require('./db/db.js');
 
-var UserController = require('./controllers/UserController.js')
+var UserController = require('./controllers/UserController.js');
+var UserController = require('./controllers/CityController.js')
 
 app.use(session({
 	secret:'city love',

@@ -1,9 +1,12 @@
-var mongoose = require('mongoose')
+var mongoose = require('mongoose'); 
 
-var CitiesSchema = new mongoose.Schema({
+var CitySchema = new mongoose.Schema({
 	cityName: String
 });
 
-var cityModel = mongoose.model('City', CitySchema);
 
-module.exports = cityModel
+
+var CityModel = mongoose.model('City', CitySchema);
+
+module.exports = CityModel; 
+
