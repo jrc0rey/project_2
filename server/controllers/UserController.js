@@ -64,7 +64,6 @@ User.findOne({username: req.body.username}, function(err, user){
 					console.log('not working')
 					res.render('register', {message: 'username or password not found'})
 				}
-
 			})
 		}
 	})
