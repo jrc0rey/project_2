@@ -21,7 +21,13 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+<<<<<<< HEAD
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-watch": "^4.3.11",
+=======
     "express-session": "^1.15.1",
+>>>>>>> 069d2015cd21a23e227b4c55ba90da93db784829
     "hbs": "^4.0.1",
     "mongoose": "^4.8.7",
     "path": "^0.12.7"
