@@ -60,12 +60,13 @@ User.findOne({username: req.body.username}, function(err, user){
 				res.render('cities')
 
 				}
-				else{
-					console.log('not working')
-					res.render('register', {message: 'username or password not found'})
-				}
 
 			})
+		}
+
+	else if(user === null){
+			console.log('not working')
+			res.render('register', {message: 'username or password not found'})
 		}
 	})
 })
