@@ -39,8 +39,6 @@ app.use('/board', BoardController)
 
 
 
-
-
 server.listen(3000, function(){
 	console.log('server is up and running on port 3000')
 })

@@ -1,22 +1,20 @@
 <body class="board">
 
 
-<div id="postContainer">
-
-{{#each postsArray}}
-	<h1 class="yourPost">{{this.postName}}</h1>
-{{/each}}
-
-</div>
-
-
-
 <div class="postFooter">
 
 <form id="boardForm" action="/city/post" method="POST"> 
-	<input id="cityInput" type="text" placeholder="what do you fuckin love about your city" name="cityLove" maxlength="25"/>
+	<input id="cityInput" type="text" placeholder="what do you fuckin love about your city" name="loveShown" maxlength="25"/>
 	<button id="loveCity"> Show the love </button>
 </form>
+
+</div>
+
+<div id="postContainer">
+
+{{#each postsArray}}
+	<h1 class="yourPost">I fuckin love {{this.loveShown}}</h1>
+{{/each}}
 
 </div>
 
