@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/', UserController)
 app.use('/city', CityController)
-app.use('/city', BoardController)
+app.use('/board', BoardController)
 
 
 
