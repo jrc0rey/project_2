@@ -2,16 +2,17 @@ var express = require('express'),
 	router 	= express.Router(),
 	City 	= require('../models/City.js'); 
 
-	router.get('/cities', function(req, res){
-		console.log('hey'); 
+	router.get('/love', function(req, res){ 
 		res.render('cities'); 
 
 	})
 
-	router.post('/cities', function(request, response){
-	var city = new City({city: request.body.name,}); 
-								
-	city.save();
+	router.post('/love', function(req, res){
+		console.log(req.body.city)
+		res.send('success')
+
+	// var city = new City({city: request.body.cityName,}); 
+							
 });
 
 

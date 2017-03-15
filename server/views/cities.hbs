@@ -1,17 +1,25 @@
-<div class="header">
-      <div class="title"> Choose your city! </div>
+<body class="cityPage">
 
-<ul class="city">
+{{!-- <h1 class="cityChoice"> pick a city to rep </h1> --}}
 
+<ul class="cityList">
 	<li> Chicago  </li>
 	<li> New York </li>
-	<li> L.A.     </li>
+	<li> Los Angelas </li>
+	<li>{{newCity}}</li>
 </ul>
 
-<div class="button">
 
-        <button>+</button> 
-        <input type="text" name="city-input">
+<div class="cityFooter">
+
+<form id="cityForm" action="/city/love" method="POST"> 
+	<input id="bottom" type="text" placeholder="add a city" name="city"/>
+	<button id="newCity"> Submit </button>
+</form>
 
 </div>
+
+</div>
+
+</body>
 
