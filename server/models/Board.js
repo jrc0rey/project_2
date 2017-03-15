@@ -9,3 +9,4 @@ var BoardSchema = new mongoose.Schema({
 var BoardModel = mongoose.model('board', BoardSchema)
 
 module.exports = BoardModel
+

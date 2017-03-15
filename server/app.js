@@ -12,6 +12,7 @@ require('./db/db.js');
 
 var UserController = require('./controllers/UserController.js');
 var CityController = require('./controllers/CityController.js');
+var myPostController = require('./controllers/myPostController.js');
 
 app.use(session({
 	secret:'city love',
@@ -27,6 +28,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/', UserController)
 app.use('/city', CityController)
+app.use('/city', myPostController)
 
 
 
