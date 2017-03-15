@@ -2,24 +2,27 @@
 
 {{!-- <h1 class="cityChoice"> pick a city to rep </h1> --}}
 
-<ul class="cityList">
-	<li> Chicago  </li>
+<div id="listContainer">
+{{!-- <ul class="cityList"> --}}
+{{#each citiesArray}}
+	{{!-- <li> Chicago  </li>
 	<li> New York </li>
-	<li> Los Angelas </li>
-	<li>{{newCity}}</li>
-</ul>
+	<li> Los Angeles </li> --}}
+	<h1 class="yourCity">{{this.cityName}}</h1>
+{{/each}}
+{{!-- </ul> --}}
+</div>
 
 
 <div class="cityFooter">
 
 <form id="cityForm" action="/city/love" method="POST"> 
-	<input id="bottom" type="text" placeholder="add a city" name="city"/>
+	<input id="bottom" type="text" placeholder="add a city" name="cityName"/>
 	<button id="newCity"> Submit </button>
 </form>
 
 </div>
 
-</div>
 
 </body>
 

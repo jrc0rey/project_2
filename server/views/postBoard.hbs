@@ -1,5 +1,26 @@
-<div class="board">
+<body class="board">
 
-hi
+
+<div id="postContainer">
+
+{{#each postsArray}}
+	<h1 class="yourPost">{{this.postName}}</h1>
+{{/each}}
 
 </div>
+
+
+
+<div class="postFooter">
+
+<form id="boardForm" action="/city/post" method="POST"> 
+	<input id="cityInput" type="text" placeholder="what do you fuckin love about your city" name="cityLove" maxlength="25"/>
+	<button id="loveCity"> Show the love </button>
+</form>
+
+</div>
+
+
+
+
+</body>

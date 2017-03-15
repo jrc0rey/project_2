@@ -63,7 +63,7 @@ body {
 .cityPage {
   background-color: #9e0026;
 }
-.cityChoice {
+.yourCity {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 55px;
@@ -107,4 +107,25 @@ button:focus {
   background-color: #9e0026;
   box-shadow: none;
   border-radius: 0px;
+}
+.board {
+  background-color: #ff334c;
+}
+.postFooter {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+#boardForm {
+  margin-left: 15px;
+}
+#cityInput {
+  width: 569px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }

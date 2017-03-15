@@ -1,8 +1,9 @@
 var mongoose = require('mongoose')
 
 var BoardSchema = new mongoose.Schema({
-	cityName: String,
-	posts: [mongoose.Schema.Types.Mixed],
+	loveShown: String,
+	// posts: [mongoose.Schema.Types.Mixed],
+	userName: String
 
 })
 
