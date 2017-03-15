@@ -15,7 +15,7 @@ router.post('/post', function(req, res){
 	var post = new Post({loveShown: req.body.loveShown}); 
 	post.save();
 	
-	res.redirect('/city/post'); 
+	res.redirect('/board/post'); 
 })
 
 
