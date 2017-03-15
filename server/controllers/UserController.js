@@ -2,31 +2,6 @@ var express = require('express'),
 	router = express.Router(),
 	User = require('../models/User.js'),
 	bcrypt = require('bcryptjs');
-	// passport = require('passport'),
- //    LocalStrategy = require('passport-local').Strategy;
-
-
-
-// passport.use(new LocalStrategy(
-//   function(username, password, done) {
-//     User.findOne({ username: req.body.username }, function(err, user) {
-//       if (err) { return done(err); }
-//       if (!user) {
-//         return done(null, false, { message: 'Incorrect username.' })
-//       }
-//       if (!user.validPassword(password)) {
-//         return done(null, farslse, { message: 'Incorrect password.' });
-//       }
-//       return done(null, user);
-//     })
-//   }
-// ))
-
-// app.post('/login', function(req, res){
-//   passport.authenticate('local', { successRedirect: '/',
-//                                    failureRedirect: '/login',
-//                                    failureFlash: true 
-//                                })
 
 
 

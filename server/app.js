@@ -26,9 +26,9 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use('/', UserController)
+app.use('/user', UserController)
 app.use('/city', CityController)
-app.use('/city', BoardController)
+app.use('/board', BoardController)
 
 
 
