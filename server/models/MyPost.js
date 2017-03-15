@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 
 var MyPostSchema = new mongoose.Schema({
 	myPostName: String
+
 });
 
 

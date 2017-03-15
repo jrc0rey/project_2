@@ -1,9 +1,11 @@
 var express = require('express'),
 	router 	= express.Router(),
 	Post 	= require('../models/Board.js');
-
-router.get('/post', function(req,res,next){
-		Post.find(function(err, posts){
+//wildcard
+router.get('/post/:city', function(req,res,next){
+		var newCity = req.params.city;
+		console.log(req.params.city)
+		Post.find({city: "chicago", loveShown:"ball" }, function(err, posts){
 			res.render('postBoard', {postsArray: posts})
 		})
 	})
@@ -12,10 +14,11 @@ router.get('/post', function(req,res,next){
 router.post('/post', function(req, res){
 	console.log(req.body.cityLove)
 
-	var post = new Post({loveShown: req.body.loveShown}); 
+	var post = new Post({loveShown: req.body.loveShown,
+						 city: "chicago"}); 
 	post.save();
 	
-	res.redirect('/board/post'); 
+	res.redirect('/board/post/chicago'); 
 })
 
 
