@@ -3,14 +3,11 @@
 {{!-- <h1 class="cityChoice"> pick a city to rep </h1> --}}
 
 <div id="listContainer">
-{{!-- <ul class="cityList"> --}}
+
 {{#each citiesArray}}
-	{{!-- <li> Chicago  </li>
-	<li> New York </li>
-	<li> Los Angeles </li> --}}
 	<h1 class="yourCity"><a href="/board/post/{{this.cityName}}"> {{this.cityName}}</a></h1>
 {{/each}}
-{{!-- </ul> --}}
+
 </div>
 
 
