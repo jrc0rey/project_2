@@ -1,6 +1,6 @@
 var mongoose = require('mongoose')
 
-var BoardSchema = new mongoose.Schema({
+var PostSchema = new mongoose.Schema({
 	loveShown: String,
 	// posts: [mongoose.Schema.Types.Mixed],
 	userName: String,
@@ -8,7 +8,7 @@ var BoardSchema = new mongoose.Schema({
 
 })
 
-var BoardModel = mongoose.model('board', BoardSchema)
+var PostModel = mongoose.model('post', PostSchema)
 
-module.exports = BoardModel
+module.exports = PostModel
 

@@ -11,7 +11,7 @@ router.get('/register', function(req,res,next){
 })
 
 router.post('/register', function(req,res,next){
-	console.log(req.body);
+	// console.log(req.body);
 		User.findOne({username: req.body.username}, function(err,user){
 
 		if(user === null){
@@ -32,7 +32,7 @@ router.post('/register', function(req,res,next){
 							req.session.userId = user.id;
 							req.session.isLoggedIn = true;
 
-							res.render('cities')
+							res.redirect('/city/love')
 						}
 						else{
 							res.send('there was some error');
@@ -60,7 +60,7 @@ User.findOne({username: req.body.username}, function(err, user){
 				req.session.userId = user.id;
 				req.session.isLoggedIn = true;
 
-				res.render('cities')
+				res.redirect('/city/love')
 
 				}
 

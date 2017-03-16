@@ -88,8 +88,16 @@ body {
   position: absolute;
   bottom: 0;
 }
+#listContainer {
+  width: 50%;
+  height: 100vh;
+  overflow: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
 .cityPage {
   background-color: #9e0026;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .yourCity {
   color: white;
@@ -99,7 +107,7 @@ body {
 .yourCity a {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 55px;
+  font-size: 100px;
   text-decoration: none;
 }
 .cityList {
@@ -168,4 +176,15 @@ button:focus {
   font-family: 'Roboto', sans-serif;
   font-size: 70px;
   list-style: none;
+  margin-top: -35px;
+}
+h2 {
+  color: yellow;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+.individual {
+  width: 100%;
+  height: auto;
+  background-color: red;
 }

@@ -3,10 +3,14 @@ var express = require('express'),
 	City 	= require('../models/City.js'); 
 
 	router.get('/love', function(req, res){
-		City.find(function(err,cities){
-			res.render('cities', {citiesArray: cities})
-		})
-	})
+        if(req.session.isLoggedIn === true){        
+            City.find(function(err,cities){
+                res.render('cities', {citiesArray: cities})
+        })    
+            }else{    
+                    res.redirect('/user/login');  
+        }
+    })
 
 	router.post('/love', function(req, res){
 		console.log(req.body.cityName)
