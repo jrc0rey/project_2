@@ -5,17 +5,19 @@ var express = require('express'),
 router.get('/post/:city', function(req,res,next){
 		var newCity = req.params.city;
 		console.log(req.params.city)
-		Post.find({city: "chicago", loveShown:"ball" }, function(err, posts){
+		Post.find({city: newCity}, function(err, posts){
 			res.render('postBoard', {postsArray: posts})
 		})
 	})
 
 
-router.post('/post', function(req, res){
+router.post('/post/:city', function(req, res){
+	var newCity = req.params.city;
+
 	console.log(req.body.cityLove)
 
 	var post = new Post({loveShown: req.body.loveShown,
-						 city: "chicago"}); 
+						 city: newCity}); 
 	post.save();
 	
 	res.redirect('/board/post/chicago'); 
