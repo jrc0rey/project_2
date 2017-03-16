@@ -5,6 +5,8 @@
 
 body{
 	width: 100%;
+	min-width: 780px;
+	min-height: 500px;
 	height: 100vh;	
 	display: flex;
 	flex-direction: column;
@@ -14,13 +16,38 @@ body{
 	margin: 0; 
 }
 
+.userBody{
+	width: 100%;
+	height:100%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.29'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 
 .register{
 	font-family: 'Roboto', sans-serif;
-	font-size: 55px;
+	font-size: 65px;
 	color: #023d93;
+	margin-top:0;
+	line-height: 60px;
+	margin-bottom: 30px;
+
 	// text-transform: uppercase;
 
+}
+
+#registerHolder{
+	width: 600px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-right:100px;
+	margin-bottom: 100px;
 }
 
 .message{
@@ -43,17 +70,21 @@ body{
 
 #cityScape1{
 	height: 200px;
-
+	position: fixed;
+	bottom: 0;
 }
 
+
+
 #formHolder{
-	width: 400px;
+	width: 600px;
 	height: 400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	margin-right:250px;
+	margin-right:100px;
+	margin-bottom: 100px;
 }
 
 .login{
@@ -62,6 +93,7 @@ body{
 	color: #023d93;
 	margin-top:0;
 	line-height: 60px;
+	margin-bottom: 30px;
 	// text-transform: uppercase;
 }
 
@@ -72,14 +104,14 @@ body{
 	align-items: flex-end;
 	justify-content: center;
 	// background-color: green;
-	position: fixed;
+	position: absolute;
 	bottom:0;
 
 }
 
 #cityScape2{
 	height: 200px;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
 
@@ -180,5 +212,12 @@ button:focus{
 	height: 30px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
+}
+
+.yourPost{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	list-style: none;
 }
 
