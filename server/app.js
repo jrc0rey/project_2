@@ -1,4 +1,5 @@
-var express = require('express'),
+var dotenv = require('dotenv').config()
+	express = require('express'),
 	app = express(),
 	server = require('http').createServer(app),
 	mongoose = require('mongoose'),
@@ -6,6 +7,7 @@ var express = require('express'),
 	bodyParser = require('body-parser'),
 	hbs = require('hbs'),
 	session = require('express-session')
+
 
 
 require('./db/db.js');
