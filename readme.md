@@ -17,6 +17,13 @@ Ideally, we'd like to give the user the opportunity to add their own statemnts t
 [wireframe 2](server/public/images/wireframe_2.JPG)
 
 
+
+---TECH USED---
+
+Express,Mongoose,Javascript,CSS
+
+
+
 ---IMPROVEMENTS---
 
 We would like to be able to add an option to delete(time issue), and a way to put a specific statement onto a t-shirt template to give the user an idea of what their t-shirt could look like. And the ability to post to other social media sites.
