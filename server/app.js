@@ -28,6 +28,10 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.get('/', function(req,res){
+	res.redirect('/user/register')
+})
+
 app.use('/user', UserController)
 app.use('/city', CityController)
 app.use('/post', PostController)
