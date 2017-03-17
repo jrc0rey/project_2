@@ -4,8 +4,8 @@
 <div class="postFooter">
 									
 <form id="boardForm" action="/post/city/{{city}}" method="POST"> 
-	<input id="cityInput" type="text" placeholder="what do you fuckin love about your city" name="loveShown" maxlength="25"/>
-	<button id="loveCity"> Show the love </button>
+	<input id="cityInput" type="text" placeholder="what do you f*ckin love about your city" name="loveShown" maxlength="25"/>
+	<button id="loveCity"> Send </button>
 </form>
 
 </div>
@@ -13,8 +13,9 @@
 <div id="postContainer">
 
 {{#each postsArray}}
-	<h2> {{this.userName}} fuckin loves</h2> <br> <h1 class="yourPost"> {{this.loveShown}}</h1>
+	<div id="myPost"> <h2> {{this.userName}} f*ckin loves</h2> <br> <h1 class="yourPost"> {{this.loveShown}}</h1> </div>
 {{/each}}
+
 	
 
 

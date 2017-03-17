@@ -97,6 +97,69 @@ body{
 	// text-transform: uppercase;
 }
 
+.loginBtn{
+ height: 20px;
+ color: white;
+ font-family: 'Roboto', sans-serif;
+ font-size: 10px;
+ border: 0;
+ background-color: #023d93;
+ box-shadow:none;
+ border-radius: 0px;
+}
+
+.loginUser{
+	width: 150px;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	border: 0;
+}
+
+.loginPass{
+	width: 150px;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	border:0;
+}
+
+.regUser{
+	width: 150px;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	border:0;
+}
+
+.regUserPass{
+	width: 150px;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	border:0;
+}
+
+.regEmail{
+	width: 150px;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	border:0;
+}
+
+.signUpBtn{
+ height: 20px;
+ color: white;
+ font-family: 'Roboto', sans-serif;
+ font-size: 10px;
+ border: 0;
+ background-color: #023d93;
+ box-shadow:none;
+ border-radius: 0px;
+}
+
+
 #cityDisplay2{
 	width: 100%;
 	height: 150px;
@@ -118,7 +181,7 @@ body{
 //Page 2
 
 #listContainer{
-	width: 50%;
+	width: 100%;
 	height: 100vh;
 	// background-color: green;
 	overflow: auto;
@@ -129,7 +192,7 @@ body{
 
 
 .cityPage{
-	background-color: #9e0026;
+	background-color: #000daa;
 	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -157,8 +220,9 @@ body{
 
 .cityFooter{
 	width: 100%;
+	min-width: 780px;
 	height: 100px;
-	background-color: #590017;
+	background-color: #00126b;
 	position: fixed;
 	bottom: 0;
 	display: flex;
@@ -187,12 +251,13 @@ button:focus{
 }
 
 #newCity{
- height: 24px;
+ height: 30px;
+ width: 50px;
  color: white;
  font-family: 'Roboto', sans-serif;
  font-size: 10px;
  border: 0;
- background-color: #9e0026;
+ background-color: #000daa;
  box-shadow:none;
  border-radius: 0px;
 }
@@ -201,12 +266,15 @@ button:focus{
 
 .board{
 	background-color: #ff334c;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
+
 
 .postFooter{
 	width: 100%;
+	min-width: 780px;
 	height: 100px;
-	background-color: rgba(0,0,0,.5);
+	background-color: #db0f32;
 	position: fixed;
 	bottom: 0;
 	display: flex;
@@ -223,6 +291,7 @@ button:focus{
 	height: 30px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
+	border: none;
 }
 
 .yourPost{
@@ -243,5 +312,36 @@ h2{
 	width: 100%;
 	height: auto;
 	background-color: red;
+}
+
+#loveCity{
+ height: 30px;
+ width: 50px;
+ color: white;
+ font-family: 'Roboto', sans-serif;
+ font-size: 10px;
+ border: 0;
+ background-color: #ff334c;
+ box-shadow:none;
+ border-radius: 0px;
+}
+
+#postContainer{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	overflow: auto;
+	margin-bottom: 100px;
+	margin-left: 50px;
+	// text-align: center;
+}
+
+#myPost{
+	height: 300px;
+	width: 600px;
+	// background-color: green;
+
 }
 

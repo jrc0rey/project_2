@@ -7,7 +7,9 @@ var express = require('express'),
             City.find(function(err,cities){
                 res.render('cities', {citiesArray: cities})
         })    
-            }else{    
+            }
+
+            else{    
                     res.redirect('/user/login');  
         }
     })
